@@ -2,36 +2,36 @@ const discord = require("discord.js");
 
 module.exports = {
   name: "botinfo",
-  category: "help",
+  category: "info",
   description: "INVITE BOT",
   run: async (client, message, args) => {
     let embed = new discord.MessageEmbed()
       .setTitle(`__**INFORMATION ABOUT BOT**__`)
-      .addField("> <a:PurpleFire:743831216188555385>BOT NAME<a:PurpleFire:743831216188555385>", `Zeyrox`)
+      .addField("> <a:Arrow_Right:754013794661040278> BOT NAME", `ROUNAK BOT`)
       .addField(
-        "> <a:PurpleFire:743831216188555385>BOT DEVELOPER<a:PurpleFire:743831216188555385> ",
+        "> <a:Arrow_Right:754013794661040278> BOT DEVELOPER",
         `
- <@551675716635328512> `
+ <@649452944609247263> `
       )
       .addField(
-        "> <a:PurpleFire:743831216188555385>TOTAL SERVER<a:PurpleFire:743831216188555385>",
+        "> <a:Arrow_Right:754013794661040278> TOTAL SERVER",
        `${client.guilds.cache.size}`,
         true
       )
       .addField(
-         "> <a:PurpleFire:743831216188555385>TOTAL CHANNAL<a:PurpleFire:743831216188555385>",
+         "> <a:Arrow_Right:754013794661040278> TOTAL CHANNEL",
         `${client.channels.cache.size}`
       )
       .addField(
-        "> <a:PurpleFire:743831216188555385>TOTAL USER<a:PurpleFire:743831216188555385>",
+        "> <a:Arrow_Right:754013794661040278> TOTAL USERS",
         `${client.users.cache.size}`,
         true
-      )
-      .addField("> <a:PurpleFire:743831216188555385>BOT LIBRARY<a:PurpleFire:743831216188555385>", `discord.js`)
-
+        
       .setColor("RANDOM")
-      .setFooter(`information about bot`);
-
+      .setFooter(`INFORMATION ABOUT BOT`);
     message.channel.send(embed);
   }
 };
+    
+  
+
